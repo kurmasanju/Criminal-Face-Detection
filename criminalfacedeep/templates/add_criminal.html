@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Add New Criminal</h2>
+    <form method="POST" action="{{ url_for('add_criminal') }}">
+        <label for="criminal_id">Criminal ID:</label>
+        <input type="text" id="criminal_id" name="criminal_id" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <button type="submit">Capture Images</button>
+    </form>
+{% endblock %}

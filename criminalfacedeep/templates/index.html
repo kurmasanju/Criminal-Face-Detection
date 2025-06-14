@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Live Face Detection</h2>
+    <div class="video-feed">
+        <img src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+    </div>
+{% endblock %}
